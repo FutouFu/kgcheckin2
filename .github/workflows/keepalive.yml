@@ -3,7 +3,7 @@ name: Repository Keepalive
 on:
   schedule:
     # 每30天运行一次（可自定义），避免仓库未更新导致Actions被禁用
-    - cron: '0 0 */30 * *'
+    - cron: '0 0 */3 * *'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
